@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>NYT Survey Music</title>
+  <meta name="description" content="A demo of selecting audio tracks à la carte using the Web Audio API">
+  <meta name="author" content="Dave Yarwood">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="vendor/css/normalize.css">
+  <link rel="stylesheet" href="vendor/css/skeleton.css">
+  <link rel="stylesheet" href="vendor/css/checkbox-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h1>NYT Survey Music Demo</h1>
+    <div class="row">
+      <div class="ten columns" id="tracks">
+        <div class="row">
+          <div class="two columns">
+            <input id="track1" type="checkbox" class="css-checkbox" />
+            <label for="track1" class="css-label">1</label>
+          </div>
+          <div class="two columns">
+            <input id="track2" type="checkbox" class="css-checkbox">
+            <label for="track2" class="css-label">2</label>
+          </div>
+          <div class="two columns">
+            <input id="track3" type="checkbox" class="css-checkbox">
+            <label for="track3" class="css-label">3</label>
+          </div>
+          <div class="two columns">
+            <input id="track4" type="checkbox" class="css-checkbox">
+            <label for="track4" class="css-label">4</label>
+          </div>
+          <div class="two columns">
+            <input id="track5" type="checkbox" class="css-checkbox">
+            <label for="track5" class="css-label">5</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <input id="track6" type="checkbox" class="css-checkbox">
+            <label for="track6" class="css-label">6</label>
+          </div>
+          <div class="two columns">
+            <input id="track7" type="checkbox" class="css-checkbox">
+            <label for="track7" class="css-label">7</label>
+          </div>
+          <div class="two columns">
+            <input id="track8" type="checkbox" class="css-checkbox">
+            <label for="track8" class="css-label">8</label>
+          </div>
+          <div class="two columns">
+            <input id="track9" type="checkbox" class="css-checkbox">
+            <label for="track9" class="css-label">9</label>
+          </div>
+          <div class="two columns">
+            <input id="track10" type="checkbox" class="css-checkbox">
+            <label for="track10" class="css-label">10</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <input id="track11" type="checkbox" class="css-checkbox">
+            <label for="track11" class="css-label">11</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="two columns" id="play">
+        <button style="margin: auto;" class="button button-primary">&#9654;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/js/jquery-1.12.3.min.js"></script>
+  <script src="js/main.js"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
