@@ -1,4 +1,8 @@
-#play {
+#controls {
   margin-left: 0px;
   margin-top: 10px;
+}
+
+#controls button {
+  margin-bottom: 5px;
 }

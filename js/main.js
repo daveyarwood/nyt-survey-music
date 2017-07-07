@@ -11,16 +11,31 @@ function getTrackUrl(track) {
   }
 }
 
-function getActiveTracks() {
-  return $('#tracks input[type=checkbox]:checked').map(function(i, checkbox) {
+function allTracks() {
+  return $('#tracks input[type=checkbox]');
+}
+
+function checkedTracks() {
+  return $('#tracks input[type=checkbox]:checked');
+}
+
+function activeTracks() {
+  return checkedTracks().map(function(i, checkbox) {
     return getTrackUrl(checkbox);
   });
 }
 
 function playActiveTracks() {
-  playTracks(getActiveTracks());
+  playTracks(activeTracks());
+}
+
+function randomizeActiveTracks() {
+  allTracks().each(function(i, checkbox) {
+    $(checkbox).prop('checked', (Math.random() > 0.5));
+  });
 }
 
 $(function() {
-  $('#play button').click(playActiveTracks);
+  $('#play').click(playActiveTracks);
+  $('#randomize').click(randomizeActiveTracks);
 });
